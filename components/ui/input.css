@@ -1,0 +1,77 @@
+/* Enhanced Input Styles */
+.input-base {
+  @apply flex h-10 w-full rounded-md border border-input bg-background
+         px-3 py-2 text-sm ring-offset-file placeholder:text-muted-foreground
+         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
+         focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.input-with-icon {
+  @apply flex items-center w-full;
+}
+
+.input-with-icon > *:first-child {
+  @apply flex h-10 items-center justify-center px-3 text-muted-foreground
+         border-r border-input;
+}
+
+.input-with-icon > *:last-child {
+  @apply flex-h w-full pl-2 pr-3;
+}
+
+/* Nature-inspired input states */
+.input-focused {
+  @apply ring-2 ring-primary/50 border-primary/70;
+}
+
+.input-success {
+  @apply ring-2 ring-success/50 border-success/60;
+}
+
+.input-error {
+  @apply ring-2 ring-destructive/50 border-destructive/60;
+}
+
+/* Organic input variations */
+.input-organic {
+  @apply input-base bg-background/80 backdrop-blur-sm
+         border border-primary/20 hover:border-primary/30;
+}
+
+.input-organic:focus {
+  @apply bg-white/90 border-primary/50 ring-2 ring-primary/50;
+}
+
+/* Textarea enhancements */
+.textarea-base {
+  @apply flex min-h-[80px] w-full rounded-md border border-input bg-background
+         px-3 py-2 text-sm resize-y placeholder:text-muted-foreground
+         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
+         focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.textarea-organic {
+  @apply textarea-base bg-background/80 backdrop-blur-sm
+         border border-primary/20 hover:border-primary/30;
+}
+
+.textarea-organic:focus {
+  @apply bg-white/90 border-primary/50 ring-2 ring-primary/50;
+}
+
+/* Select enhancements */
+.select-base {
+  @apply flex h-10 w-full rounded-md border border-input bg-background
+         px-3 py-2 text-sm ring-offset-file placeholder:text-muted-foreground
+         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
+         focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.select-organic {
+  @apply select-base bg-background/80 backdrop-blur-sm
+         border border-primary/20 hover:border-primary/30;
+}
+
+.select-organic:focus {
+  @apply bg-white/90 border-primary/50 ring-2 ring-primary/50;
+}

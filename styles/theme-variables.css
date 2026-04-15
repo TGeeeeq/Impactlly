@@ -1,0 +1,101 @@
+/* Theme Variables File */
+:root {
+  /* Radius System - Organic, softer corners */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+
+  /* Spacing System - Based on 4px grid with organic variations */
+  --spacing-px: 1px;
+  --spacing-0: 0px;
+  --spacing-0-5: 2px;
+  --spacing-1: 4px;
+  --spacing-1-5: 6px;
+  --spacing-2: 8px;
+  --spacing-2-5: 10px;
+  --spacing-3: 12px;
+  --spacing-3-5: 14px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-14: 56px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-28: 112px;
+  --spacing-32: 128px;
+
+  /* Typography System */
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', serif;
+  --font-sans: 'Inter', 'Lato', sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+
+  /* Transition Durations */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 350ms;
+
+  /* Animation Timing Functions */
+  --ease-organic: cubic-bezier(0.3, 0, 0.7, 1);
+  --ease-nature: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-pulse: cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* Primary Nature Colors */
+:root {
+  --color-earth-green: #2D5D2C;
+  --color-soil-brown: #8B7355;
+  --color-sky-blue: #4A90E2;
+  --color-sun-yellow: #F5A623;
+  --color-leaf-green: #6B8E23;
+  --color-clay-red: #CD5C5C;
+
+  /* Nature-inspired Neutrals */
+  --color-stone-white: #F8F6F3;
+  --color-sand-beige: #F5F0E6;
+  --color-slate-gray: #6B7280;
+  --color-charcoal: #2F2F2F;
+
+  /* Semantic Mappings (maintain accessibility) */
+  --background: var(--color-stone-white);
+  --foreground: var(--color-charcoal);
+  --primary: var(--color-earth-green);
+  --primary-foreground: var(--color-stone-white);
+  --secondary: var(--color-soil-brown);
+  --secondary-foreground: var(--color-stone-white);
+  --accent: var(--color-sky-blue);
+  --accent-foreground: var(--color-stone-white);
+}
+
+/* Dark theme variables */
+.dark {
+  /* Dark theme nature colors */
+  --color-earth-green: #4A7C47;
+  --color-soil-brown: #A58F6B;
+  --color-sky-blue: #6BAED6;
+  --color-sun-yellow: #F7B733;
+  --color-leaf-green: #8AAE45;
+  --color-clay-red: #D16B6B;
+
+  /* Dark theme neutrals */
+  --color-stone-white: #2D2D2D;
+  --color-sand-beige: #3A372F;
+  --color-slate-gray: #9CA3AF;
+  --color-charcoal: #F8F6F3;
+
+  /* Update semantic mappings for dark mode */
+  --background: var(--color-charcoal);
+  --foreground: var(--color-stone-white);
+  --primary: var(--color-earth-green);
+  --primary-foreground: var(--color-stone-white);
+  --secondary: var(--color-soil-brown);
+  --secondary-foreground: var(--color-stone-white);
+  --accent: var(--color-sky-blue);
+  --accent-foreground: var(--color-stone-white);
+}

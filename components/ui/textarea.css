@@ -1,0 +1,17 @@
+/* Enhanced Textarea Styles */
+.textarea-base {
+  @apply flex min-h-[80px] w-full rounded-md border border-input bg-background
+         px-3 py-2 text-sm resize-y placeholder:text-muted-foreground
+         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
+         focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+/* Organic textarea variations */
+.textarea-organic {
+  @apply textarea-base bg-background/80 backdrop-blur-sm
+         border border-primary/20 hover:border-primary/30;
+}
+
+.textarea-organic:focus {
+  @apply bg-white/90 border-primary/50 ring-2 ring-primary/50;
+}

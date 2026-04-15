@@ -1,0 +1,86 @@
+/* Enhanced Button Styles */
+.button-base {
+  @apply inline-flex items-center justify-center px-4 py-2 border border-transparent
+         text-sm font-medium rounded-md shadow-sm
+         focus:outline-none focus:ring-2 offset-ring-2 focus:ring-offset-2
+         disabled:opacity-50 disabled:pointer-events-none
+         transition-all duration-200;
+}
+
+.button-primary {
+  @apply button-base bg-primary text-primary-foreground hover:bg-primary/90
+         focus:ring-primary/50 active:bg-primary/80;
+}
+
+.button-secondary {
+  @apply button-base bg-secondary text-secondary-foreground
+         hover:bg-secondary/90 focus:ring-secondary/50
+         active:bg-secondary/80;
+}
+
+.button-outline {
+  @apply button-base border border-primary/50 text-primary
+         hover:bg-primary/5 focus:ring-primary/50
+         active:bg-primary/10;
+}
+
+.button-destructive {
+  @apply button-base bg-destructive text-destructive-foreground
+         hover:bg-destructive/90 focus:ring-destructive/50
+         active:bg-destructive/80;
+}
+
+/* Nature-inspired button variations */
+.button-organic {
+  @apply button-base bg-primary/10 text-primary hover:bg-primary/20
+         border border-primary/20 focus:ring-primary/30;
+}
+
+.button-organic:hover {
+  @apply transform scale-105;
+}
+
+.button-organic:active {
+  @apply transform scale-95;
+}
+
+/* Button sizes */
+.button-xs { @apply px-2 py-1 text-xs; }
+.button-sm { @apply px-3 py-2 text-sm; }
+.button-md { @apply px-4 py-3 text-base; }
+.button-lg { @apply px-5 py-4 text-lg; }
+.button-xl { @apply px-6 py-5 text-xl; }
+
+/* Button variants with nature effects */
+.button-pulse {
+  @apply button-base bg-primary text-primary-foreground;
+}
+
+.button-pulse::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.3; }
+  50% { transform: scale(1.05); opacity: 0.6; }
+  100% { transform: scale(0.95); opacity: 0.3; }
+}
+
+.button-float {
+  @apply button-base bg-primary text-primary-foreground
+         shadow-lg hover:shadow-xl transition-shadow;
+}
+
+.button-float:hover {
+  @apply transform -translate-y-1;
+}
+
+.button-float:active {
+  @apply transform translate-y-0;
+}
